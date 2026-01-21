@@ -30,7 +30,7 @@ class Deletion{
 };
 int main(){
     int arr[10] ={1,2,3,4,6,5};
-    int size = 5, index = 4;
+    int size = 6, index = 4;
     Deletion del;
     del.display(arr,size);
     del.delAtIndex(arr,size,index);
@@ -39,6 +39,7 @@ int main(){
     return 0;
 }
         
+
 
 
 
