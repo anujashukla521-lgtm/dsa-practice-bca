@@ -34,11 +34,12 @@ int main(){
     Deletion del;
     del.display(arr,size);
     del.delAtIndex(arr,size,index);
-    size+=1;
+    size-=1;
     del.display(arr,size);
     return 0;
 }
         
+
 
 
 
