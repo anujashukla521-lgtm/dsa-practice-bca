@@ -40,6 +40,3 @@ This repository is for learning and practice purposes. Code may improve and evol
 
 If you’re also learning DSA, feel free to explore, learn, and practice along with me.
 
-Track my progress as a BCA student
-
-Build confidence for technical interviews
