@@ -1,3 +1,5 @@
+// C++ program that performs Linear Search to find an element in an array and returns its index if found, otherwise -1.
+
 #include<iostream>
 using namespace std;
 
@@ -23,3 +25,4 @@ int main(){
     cout<<element <<" is found at index "<<index<<endl;
     return 0;
 }
+
