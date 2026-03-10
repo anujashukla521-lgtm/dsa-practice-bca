@@ -1,3 +1,5 @@
+//C++ program that performs Binary Search on a sorted array using a class and returns the index of the searched element.
+
 #include<iostream>
 using namespace std;
 
@@ -27,4 +29,5 @@ int main(){
     int index = bs.binarySearch(arr, size, element);
     cout<<element<<" is found at index "<<index<<endl;
     return 0;
+
 }
