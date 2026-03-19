@@ -1,3 +1,5 @@
+// Implemented queue operations- enqueue, dequeue, isEmpty, and isFull using array. 
+
 #include <iostream>
 using namespace std;
 
