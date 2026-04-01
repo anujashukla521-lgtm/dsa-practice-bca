@@ -22,5 +22,3 @@ C++
 
 ## Author
 Anuja Shukla
-
-If you want, I can make it more attractive (with badges, emojis, or recruiter-level polish) — but this version is already clean and solid 👍
