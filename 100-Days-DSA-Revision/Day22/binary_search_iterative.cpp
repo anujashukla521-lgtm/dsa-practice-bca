@@ -31,6 +31,12 @@ int main()
     cin >> target;
 
     int index = binary_search(arr, arr.size(), target);
-    cout << index;
+    if(index!=-1){
+
+        cout <<"Element found at index "<< index;
+    }
+    else{
+        cout<<"Element not found";
+    }
     return 0;
 }
