@@ -1,10 +1,18 @@
-# Day 42 - Generate All Subsets using Backtracking
+# Day 42 - Backtracking: Generate Subsets & Subsets II
 
-## 📌 Topic
-Backtracking - Subset Generation
+## 📌 Topics Covered
 
-## 📝 Problem
-Generate all possible subsets of a given array.
+- Backtracking Basics
+- Generate All Subsets (Power Set)
+- Subsets II (Handling Duplicates)
+
+---
+
+## 📝 Problems Solved
+
+### 1. Generate Subsets
+
+Generate all possible subsets of a given array using recursion and backtracking.
 
 Example:
 
@@ -12,45 +20,98 @@ Input:
 [1,2,3]
 
 Output:
-8 possible subsets
+[
+[],
+[1],
+[2],
+[3],
+[1,2],
+[1,3],
+[2,3],
+[1,2,3]
+]
+
+---
+
+### 2. Subsets II
+
+Generate all **unique** subsets from an array that may contain duplicate elements.
+
+Example:
+
+Input:
+[1,2,2]
+
+Output:
+[
+[],
+[1],
+[2],
+[1,2],
+[2,2],
+[1,2,2]
+]
+
+---
 
 ## 🚀 Approach
 
-Used recursion and backtracking.
+### Generate Subsets
 
-At every index, we have two choices:
+- At each index, make two choices:
+  - Include the current element.
+  - Exclude the current element.
+- Use recursion to explore both possibilities.
+- Backtrack by removing the last chosen element.
 
-1. Include the current element
-2. Exclude the current element
+### Subsets II
 
-The recursion explores both choices and stores every valid subset.
+- Sort the array.
+- Store the current subset at every recursive call.
+- Iterate from the current index.
+- Skip duplicate elements at the same recursion level.
+- Choose → Explore → Undo (Backtrack).
 
-## 🧠 Algorithm
+---
 
-1. Start from index 0.
-2. Add current element.
-3. Recurse for next index.
-4. Remove element (backtrack).
-5. Skip current element.
-6. Store subset when index reaches array size.
+## 🧠 Key Learnings
+
+- Understanding recursion trees.
+- Difference between recursion and backtracking.
+- Choose → Explore → Undo pattern.
+- Binary-choice backtracking (Subsets).
+- For-loop based backtracking (Subsets II).
+- Handling duplicates using sorting and skipping repeated elements.
+- Importance of recursion levels while avoiding duplicate subsets.
+
+---
 
 ## ⏱ Complexity
 
-Time Complexity:
-O(n * 2^n)
+### Generate Subsets
 
-Space Complexity:
-O(n)
+- Time: **O(n × 2ⁿ)**
+- Space: **O(n)** (excluding output)
 
-## 🎯 Key Learnings
+### Subsets II
 
-- Introduction to backtracking
-- Understanding recursion decision trees
-- Choose, Explore, Undo pattern
-- Generating power sets
+- Time: **O(n × 2ⁿ)**
+- Space: **O(n)** (excluding output)
 
-## 🔮 Next Improvements
+---
 
-- Solve Subsets II (handling duplicates)
-- Practice permutation problems
-- Explore combination problems
+## 📂 File Structure
+
+```
+Day42/
+│
+├── generate_subsets.cpp
+├── subsets_ii.cpp
+└── README.md
+```
+
+---
+
+## 🎯 Milestone
+
+This day marked my introduction to backtracking through subset generation and extended the concept to handle duplicate elements using **Subsets II**.
